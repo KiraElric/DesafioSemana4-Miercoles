@@ -1,2 +1,13 @@
-<h1>Pages#create</h1>
-<p>Find me in app/views/pages/create.html.erb</p>
+<% if @project.errors.any? %>
+  <div id="error_explanation">
+    <h2 class="text-center display-3 font-weight-bold">Existen <%= pluralize(@project.errors.count, "errores") %>
+      No se logro guardar el registro </h2>
+    <ul>
+      <% @project.errors.full_messages.each do |message|%>
+      <li><%= messagge %></li>
+      <% end %>
+    </ul>
+  </div>
+<% else %>
+  <h2 class="text-center display-3 font-weight-bold">Se guardo su registro con exito!! :D</h2>
+<% end %>
