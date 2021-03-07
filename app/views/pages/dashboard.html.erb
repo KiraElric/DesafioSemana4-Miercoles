@@ -1,2 +1,23 @@
-<h1>Pages#dashboard</h1>
-<p>Find me in app/views/pages/dashboard.html.erb</p>
+<h1 class="text-center font-weight-bold display-2">Proyectos</h1>
+<table class="table text-center">
+  <thead>
+    <tr>
+      <th>Nombre Proyecto</th>
+      <th>Estado</th>
+      <th>Fecha Inicio</th>
+      <th>Fecha Término</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @projects.each do |project|%>
+    <tr>
+      <td><%= project.project_name%></td>
+      <td><%= project.state%></td>
+      <td><%= project.start_on%></td>
+      <td><%= project.finish_on%></td>
+      <td><%= project.description%></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
