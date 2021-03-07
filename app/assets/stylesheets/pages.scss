@@ -1,3 +1,20 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//Diseño de los elementos del filtro de la vista de dashboard
+.filters {
+  text-align: right;
+}
+
+.filters li {
+  display: inline-block;
+  margin: 5px 0;
+  background-color: aquamarine;
+}
+
+.filters li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 0 25px;
+}

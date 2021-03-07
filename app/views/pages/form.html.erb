@@ -3,7 +3,7 @@
 
   <div class="form-group">
     <label for="name_project">Nombre del Proyecto</label>
-    <input type="text" class="form-control" id="name_project" name="name_project">  
+    <input type="text" class="form-control" id="name_project" name="name_project">
   </div>
 
   <div class="form-group">
@@ -19,6 +19,15 @@
   <div class="form-group">
     <label for="finish_on">Fecha término proyecto</label>
     <input type="date" class="form-control" id="finish_on" name="finish_on">
+  </div>
+
+  <div class="form-group">
+    <label for="state">Estado</label>
+    <select name="state" id="state"> 
+    <!-- Creación de la lista de opciones del select, donde el primer valor es el label y el segundo es el value que se envia, en este caso se estaria enviando el valor del enum -->
+      <%= options_for_select([['Propuesta','proposal'],['En progreso','in_progress'],['Terminado','finished']]) %>
+    </select>
+
   </div>
 
   <button type="submit" class="btn btn-success">Guardar</button>
