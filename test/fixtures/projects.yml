@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_project: MyString
+  description: MyText
+  start_on: 2021-03-07
+  finish_on: 2021-03-07
+  state: 1
+
+two:
+  name_project: MyString
+  description: MyText
+  start_on: 2021-03-07
+  finish_on: 2021-03-07
+  state: 1
